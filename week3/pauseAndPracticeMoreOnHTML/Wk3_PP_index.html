@@ -2,28 +2,45 @@
 <html>
     <head>
         <title>HTML5 Semantics</title>
+        <link rel="stylesheet "href="style.css"></link>
     </head>
     <body>
-        <nav style="background-color:yellow; overflow:hidden">
-            <a href="moreInfo.html" style="float:left; position:fixed; padding:5px; text-align:center">More Information</a>   <!-- Remove the <p> and add links -->
-            </nav>
-        <header name="myHeader" style="color:blue; text-align:center; padding-top:20px">
+        <nav>
+            <a href="moreInfo.html">More Information</a>   <!-- Remove the <p> and add links -->
+        </nav>
+        <header name="pageHeader">
             <h1>Header</h1>
         </header>
-        <table style="border:black">
-            <tr>
+        <table>
+            <thead>
                 <th>
-                    Hello.
+                    Title1
                 </th>
                 <th>
-                    Hi.
+                    Title2
                 </th>
-            </tr>
-            <tr>
                 <th>
-                    How ya durin.
+                    Title3
                 </th>
-            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        Data1
+                        <td>
+                            Info
+                        </td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Data2
+                        <td>
+                            Info
+                        </td>
+                    </th>
+                </tr>
+            </tbody>
         </table>
         <footer>
             <h3>Footer</h3>
