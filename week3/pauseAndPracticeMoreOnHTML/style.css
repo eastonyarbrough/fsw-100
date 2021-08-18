@@ -22,9 +22,12 @@ table {
 
 /*Navbar styling*/
 nav {
-    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
     background-color: gray;
-    overflow: hidden;
 }
 
 nav>a {
@@ -62,6 +65,6 @@ footer {
 }
 
 /*BtmSpacer styling*/
-.btmSpacer {
+.spacer {
     height: 50px;
 }
