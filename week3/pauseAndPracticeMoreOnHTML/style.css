@@ -1,11 +1,26 @@
+/*Page background styling*/
+body {
+    background-color: cornsilk;
+}
+
+/*Page header styling*/
 [name=pageHeader] {
     color: blue;
+    text-align: center;
 }
 
+/*Table styling*/
 table {
     border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.info {
+    color: red;
+}
+
+/*Navbar styling*/
 nav {
     height: 50px;
     background-color: gray;
@@ -16,4 +31,37 @@ nav>a {
     float: left;
     padding: 15px;
     text-align: center;
+}
+
+/*Image styling*/
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border: 5px solid gray;
+    margin: 40px;
+}
+
+/*Footer styling*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+}
+
+/*Description styling*/
+.description {
+    text-align: center;
+}
+
+/*BtmSpacer styling*/
+.btmSpacer {
+    height: 50px;
 }
