@@ -1,0 +1,63 @@
+/*Page background styling*/
+body {
+    background-color: cornsilk;
+}
+
+/*Page header styling*/
+.pageHeader {
+    color: blue;
+    text-align: center;
+    margin-top: 70px;
+}
+
+/*Navbar styling*/
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+}
+
+nav>a {
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border: 5px solid gray;
+    margin: 40px;
+}
+
+/*Footer styling*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+}
+
+
+/*Style Main About page*/
+#mainAbout {
+    text-align: center;
+    font-family: Indie Flower;
+    font-size: 20px;
+}
+
+/*Style random underlined elements*/
+.underLine {
+    text-decoration: underline;
+}
+
+/*Style Workschedule Table*/
+.workSchedule {
+    border: 1px solid black;
+    margin: auto;
+}
