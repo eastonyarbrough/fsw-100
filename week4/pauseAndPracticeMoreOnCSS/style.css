@@ -33,7 +33,6 @@ nav>a {
     height: 160px;
     padding-right: 10px;
     margin-right: 5px;
-    margin-left: 180px;
 }
 
 .postLink {
@@ -52,5 +51,8 @@ nav>a {
 }
 
 .totalPost {
-    margin-top: 60px;
+    border: 1px solid black;
+    width: 80%;
+    margin: 60px auto 0px auto;
+    padding: 40px;
 }
