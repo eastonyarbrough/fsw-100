@@ -1,0 +1,244 @@
+#container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 10%);
+}
+
+#header {
+    background-color: darkgray;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+#header>h1 {
+    margin: 20px;
+}
+
+#sidebar {
+    background-color: gray;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+#sidebar>h1 {
+    margin: 20px;
+}
+
+#content {
+    background-color: gray;
+    border-radius: 10px;
+    height: fit-content;
+    width: 100%;
+}
+
+#content>h1 {
+    margin: 20px;
+}
+
+#content>p {
+    margin: 20px;
+}
+
+#sidebar2 {
+    background-color: lightgray;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+#sidebar2>h1 {
+    margin: 20px;
+}
+
+#footer {
+    background-color: darkgray;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+#footer>h1 {
+    margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #container {
+        display: grid;
+        column-gap: 15px;
+        row-gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 10%);
+    }
+    
+    #header {
+        background-color: darkgray;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #header>h1 {
+        margin: 20px;
+    }
+    
+    #sidebar {
+        background-color: gray;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #sidebar>h1 {
+        margin: 20px;
+    }
+    
+    #content {
+        background-color: gray;
+        border-radius: 10px;
+        height: fit-content;
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #content>h1 {
+        margin: 20px;
+    }
+    
+    #content>p {
+        margin: 20px;
+    }
+    
+    #sidebar2 {
+        background-color: lightgray;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    #sidebar2>h1 {
+        margin: 20px;
+    }
+    
+    #footer {
+        background-color: darkgray;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    
+    #footer>h1 {
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    #container {
+        display: grid;
+        column-gap: 15px;
+        row-gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 10%);
+    }
+    
+    #header {
+        background-color: darkgray;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #header>h1 {
+        margin: 20px;
+    }
+    
+    #sidebar {
+        background-color: gray;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #sidebar>h1 {
+        margin: 20px;
+    }
+    
+    #content {
+        background-color: gray;
+        border-radius: 10px;
+        height: fit-content;
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #content>h1 {
+        margin: 20px;
+    }
+    
+    #content>p {
+        margin: 20px;
+    }
+    
+    #sidebar2 {
+        background-color: lightgray;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #sidebar2>h1 {
+        margin: 20px;
+    }
+    
+    #footer {
+        background-color: darkgray;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    
+    #footer>h1 {
+        margin: 20px;
+    }
+}
