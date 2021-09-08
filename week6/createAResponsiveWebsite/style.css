@@ -1,14 +1,14 @@
-/*Page background styling*/
+/* Body styling */
 body {
     background-color: cornsilk;
 }
-
+/* Page grid */
 #grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30px 1fr 1fr 30px;
+    grid-template-rows: 30px 160px 1fr 30px;
 }
-
+/* Navbar styling */
 nav {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -18,11 +18,24 @@ nav {
 }
 
 nav>a {
-    padding: 5px;
-    font-size: 20px;
+    padding-top: 12px;
+    padding-right: 8px;
+    font-size: 7px;
+    font-family: 'Press Start 2P';
     color: white;
     float: left;
     text-decoration: none;
+}
+
+@media only screen and (min-width: 562px) {
+    nav>a {
+        padding: 8px;
+        font-size: 13px;
+        font-family: 'Press Start 2P';
+        color: white;
+        float: left;
+        text-decoration: none;
+    }
 }
 
 nav>a:hover {
@@ -30,11 +43,13 @@ nav>a:hover {
     transform: translateY(-4px);
     transition: 0.5s ease-out;
 }
-
+/* Header styling */
 header {
     text-align: center;
+    font-family: 'Press Start 2P';
+    text-decoration: 3px solid black underline;
 }
-
+/* Footer styling */
 footer {
     background-color: gray;
 }
@@ -45,8 +60,133 @@ footer>p {
     font-size: 18px;
     margin-top: 5px;
 }
+/* Content grid styling */
+#contentGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+/* Rogue section styling */
+#flexRogue {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
 
-main>h2 {
-    text-decoration: underline;
+#flexRogue>h2 {
     text-align: center;
+    font-family: 'Press Start 2P';
+}
+
+#flexRogue>img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.rogueInfo {
+    border: 1px solid black;
+}
+
+.rogueInfo>h3 {
+    text-align: center;
+}
+
+.rogueTbl {
+    border: 1px solid black;
+}
+/* Wizard section styling */
+#flexWizard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#flexWizard>h2 {
+    text-align: center;
+    font-family: 'Press Start 2P';
+}
+
+#flexWizard>img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.wizardInfo {
+    border: 1px solid black;
+}
+
+.wizardInfo>h3 {
+    text-align: center;
+}
+
+.wizardTbl {
+    border: 1px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+    #contentGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    #flexRogue {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #flexWizard {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    #contentGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #flexRogue {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: inherit;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #flexWizard {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: inherit;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
 }

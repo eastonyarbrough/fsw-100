@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>D&D Rulings</title>
         <link rel="stylesheet" href="style.css"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <div id="grid-container">
@@ -19,10 +22,121 @@
                 <h1>Dungeon's & Dragons Rulings:</h1>
             </header>
             <main>
-                <h2>The Rogue Class!</h2>
-                <div id="flex-container">
-                    <div id="section1" class="rogueInfo">
-                        
+                <div id=contentGrid>
+                    <div id="flexRogue">
+                        <h2>The Rogue Class!</h2>
+                        <img src="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2017/01/rogue__comm_by_yamaorce-d88oizc-320-2.png"></img>
+                        <div class="rogueInfo">
+                            <h3>As a rogue these are your starting stats:</h3>
+                            <p><b>Hit Dice:</b> 1d8 per rogue level.</p>
+                            <p><b>Hit Points:</b> 1d8 + Constitution Modifier.</p>
+                            <p><b>Proficiencies:</b></p> 
+                            <ul>
+                                <li>Light armor</li>
+                                <li>Simple weapons</li>
+                                <li>Hand crossbows</li>
+                                <li>Longswords</li>
+                                <li>Rapiers</li>
+                                <li>Shortswords</li>
+                            </ul>
+                            <p><b>Tools:</b> Your choice of thieves tools.</p>
+                            <p><b>Saving Throws:</b> Dexterity and Intelligence.</p>
+                            <p><b>Skills:</b> Choose any four skills.</p>
+                        </div>
+                        <div class="rogueInfo">
+                            <h3>Choose your starting equipment:</h3>
+                            <p><b>Primary Weapon:</b> Choose either (a) a rapier or (b) a shortsword.</p>
+                            <p><b>Secondary Weapon:</b> Choose either (a) shortbow w/ 20 arrows or (b) a shortsword.</p>
+                            <p><b>Starting Pack:</b> Choose either (a) Burglar's Pack, (b) Dungeoneer's Pack or (c) Explorer's Pack.</p>
+                            <p><i>No special items.</i></p>
+                        </div>
+                        <table class="rogueTbl">
+                            <th class="rogueTbl">Level</th>
+                            <th class="rogueTbl">Prof. Bonus</th>
+                            <th class="rogueTbl">Sneak Attack</th>
+                            <th class="rogueTbl">Features</th>
+                            <tr class="rogueTbl">
+                                <td class="rogueTbl">1</td>
+                                <td class="rogueTbl">+2</td>
+                                <td class="rogueTbl">1d6</td>
+                                <td class="rogueTbl">Expertise, Sneak Attack, Thieves’ Cant</td>
+                            </tr>
+                            <tr class="rogueTbl">
+                                <td class="rogueTbl">2</td>
+                                <td class="rogueTbl">+2</td>
+                                <td class="rogueTbl">1d6</td>
+                                <td class="rogueTbl">Cunning Action</td>
+                            </tr>
+                            <tr class="rogueTbl">
+                                <td class="rogueTbl">3</td>
+                                <td class="rogueTbl">+2</td>
+                                <td class="rogueTbl">2d6</td>
+                                <td class="rogueTbl">Roguish Archetype</td>
+                            </tr>
+                            <tr class="rogueTbl">
+                                <td class="rogueTbl">4</td>
+                                <td class="rogueTbl">+2</td>
+                                <td class="rogueTbl">2d6</td>
+                                <td class="rogueTbl">Ability Score Improvement</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="flexWizard">
+                        <h2>The Wizard Class!</h2>
+                        <img src="https://www.belloflostsouls.net/wp-content/uploads/2021/03/wizard-level-up.png"></img>
+                        <div class="wizardInfo">
+                            <h3>As a wizard these are your starting stats:</h3>
+                            <p><b>Hit Dice:</b> 1d6 per wizard level.</p>
+                            <p><b>Hit Points:</b> 1d6 + Constitution Modifier.</p>
+                            <p><b>Proficiencies:</b></p> 
+                            <ul>
+                                <li>Daggers</li>
+                                <li>Darts</li>
+                                <li>Slings</li>
+                                <li>Quarterstaffs</li>
+                                <li>Light Crossbows</li>
+                            </ul>
+                            <p><b>Tools:</b> None.</p>
+                            <p><b>Saving Throws:</b> Intelligence and Wisdom.</p>
+                            <p><b>Skills:</b> Choose any two skills.</p>
+                        </div>
+                        <div class="wizardInfo">
+                            <h3>Choose your starting equipment:</h3>
+                            <p><b>Primary Weapon:</b> Choose either (a) a quarterstaff or (b) a dagger.</p>
+                            <p><b>Secondary Weapon:</b> Choose either (a) a component pouch or (b) an arcane focus.</p>
+                            <p><b>Starting Pack:</b> Choose either (a) Scholar's Pack or (b) Explorer's Pack.</p>
+                            <p><i>You also get a spellbook.</i></p>
+                        </div>
+                        <table class="wizardTbl">
+                            <th class="wizardTbl">Level</th>
+                            <th class="wizardTbl">Prof. Bonus</th>
+                            <th class="wizardTbl">Features</th>
+                            <th class="wizardTbl">Cantrips</th>
+                            <tr class="wizardTbl">
+                                <td class="wizardTbl">1</td>
+                                <td class="wizardTbl">+2</td>
+                                <td class="wizardTbl">Spellcasting, Arcane Recovery</td>
+                                <td class="wizardTbl">3</td>
+                            </tr>
+                            <tr class="wizardTbl">
+                                <td class="wizardTbl">2</td>
+                                <td class="wizardTbl">+2</td>
+                                <td class="wizardTbl">Arcane Tradition</td>
+                                <td class="wizardTbl">3</td>
+                            </tr>
+                            <tr class="wizardTbl">
+                                <td class="wizardTbl">3</td>
+                                <td class="wizardTbl">+2</td>
+                                <td class="wizardTbl">None</td>
+                                <td class="wizardTbl">3</td>
+                            </tr>
+                            <tr class="wizardTbl">
+                                <td class="wizardTbl">4</td>
+                                <td class="wizardTbl">+2</td>
+                                <td class="wizardTbl">Ability Score Improvement</td>
+                                <td class="wizardTbl">4</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </main>
