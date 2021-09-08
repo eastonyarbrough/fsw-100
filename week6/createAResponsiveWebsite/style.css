@@ -6,7 +6,7 @@ body {
 #grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.5fr);
+    grid-template-rows: 30px 1fr 1fr 30px;
 }
 
 nav {
@@ -19,4 +19,34 @@ nav {
 
 nav>a {
     padding: 5px;
+    font-size: 20px;
+    color: white;
+    float: left;
+    text-decoration: none;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+    transform: translateY(-4px);
+    transition: 0.5s ease-out;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+}
+
+footer>p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+main>h2 {
+    text-decoration: underline;
+    text-align: center;
 }
