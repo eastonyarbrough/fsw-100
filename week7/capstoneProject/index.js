@@ -49,3 +49,6 @@ let caciCost = document.getElementById("caciPrice").value;
 form.addEventListener("change", function() {
     total.textContent = "$" + ((spagQuantity.value * spagCost) + (raviQuantity.value * raviCost) + (lasaQuantity.value * lasaCost) + (pizzQuantity.value * pizzCost) + (boloQuantity.value * boloCost) + (caciQuantity.value * caciCost)).toFixed(2);
 });
+
+
+test
