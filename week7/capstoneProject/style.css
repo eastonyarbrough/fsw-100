@@ -1,0 +1,650 @@
+/* Landing page styling (Mobile) */
+html {
+    background-color: #141414;
+}
+
+.navTxt {
+    padding-top: 4px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    color: black;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 70vh 1fr 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.navItemBkg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #141414;
+    margin: 10px;
+}
+
+.navItemBkg:hover {
+    background-color: #86877c;
+    transition: 0.5s ease-in-out;
+}
+
+.navItemBkg>a {
+    color: bisque;
+}
+
+#landHdrFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("images/landHdrImg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#landHdrFlex>div {
+    border: 1px solid black;
+    border-radius: 50%;
+    size: fit-content;
+    background-color: #141414;
+}
+
+#landHdrFlex>div>h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 10vh;
+    color: bisque;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+#mainLandGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#contUsFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#hoursFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.landContent {
+    font-family: 'Great Vibes', cursive;
+    font-size: 5vh;
+    color: bisque;
+    text-decoration: underline;
+}
+
+#contUsFlex>ul {
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    color: bisque;
+}
+
+table {
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    color: bisque;
+}
+
+#ftrFlex {
+    display: flex;
+    justify-content: center;
+}
+
+#ftrFlex>p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    color: bisque;
+}
+
+/* Menu page styling (Mobile) */
+#menuHdrFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("images/menuHdrImg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#menuHdrFlex>div {
+    border: 1px solid black;
+    border-radius: 50%;
+    size: fit-content;
+    background-color: #141414;
+}
+
+#menuHdrFlex>div>h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 10vh;
+    color: bisque;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+#mainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.menuItem {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 80px 80px 40px;
+    padding: 40px;
+    margin: 25px 0;
+    border: 10px ridge bisque;
+}
+
+.menuItem>img {
+    width: 30vh;
+    margin: 0 auto;
+    border: 5px groove bisque;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.menuItem>h2 {
+    font-family: 'Great Vibes', cursive;
+    color: bisque;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.menuItem>p {
+    font-family: 'Great Vibes', cursive;
+    color: bisque;
+    text-align: center;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.menuItem>h3 {
+    font-family: 'Great Vibes', cursive;
+    color: bisque;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#spaghetti {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#ravioli {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#lasagna {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#pizza {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#bolognese {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#cacioEPepe {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+/* Order page styling (Mobile) */
+#mainOrderGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 80px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#orderHdrFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("images/orderHdrImg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#orderHdrFlex>div {
+    border: 1px solid black;
+    border-radius: 50%;
+    size: fit-content;
+    background-color: #141414;
+}
+
+#orderHdrFlex>div>h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 10vh;
+    color: bisque;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+.orderFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px ridge bisque;
+    padding: 40px;
+    margin: 25px 0;
+
+}
+
+.itemLrgTxt {
+    font-family: 'Great Vibes', cursive;
+    color: bisque;
+    text-align: center;
+    font-size: 35px;
+}
+
+.itemSmlTxt {
+    font-family: 'Great Vibes', cursive;
+    color: bisque;
+    text-align: center;
+    font-size: 20px;
+}
+
+#spagOrder {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#raviOrder {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#lasaOrder {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#pizzOrder {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#boloOrder {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#caciOrder {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#totalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.totalAsset {
+    display: inline-block;
+    font-family: 'Great Vibes', cursive;
+    color: bisque;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 768px){
+    /* Landing page styling (Tablet) */
+    #mainLandGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    #contUsFlex {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #hoursFlex {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    /* Menu page styling (Tablet) */
+    #mainGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #spaghetti {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #ravioli {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #lasagna {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #pizza {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #bolognese {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    #cacioEPepe {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .menuItem {
+        margin: 25px 25px;
+    }
+
+    /* Order page styling (Tablet) */
+    #mainOrderGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 80px;
+    }
+
+    #spagOrder {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #raviOrder {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #lasaOrder {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #pizzOrder {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #boloOrder {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    #caciOrder {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #totalContainer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .orderFlex {
+        margin: 25px 25px;
+    
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    /* Menu page styling (Tablet) */
+    #mainGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #spaghetti {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #ravioli {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #lasagna {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #pizza {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #bolognese {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #cacioEPepe {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    /* Order page styling (Tablet) */
+    #mainOrderGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 80px;
+    }
+
+    #spagOrder {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #raviOrder {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #lasaOrder {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #pizzOrder {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #boloOrder {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #caciOrder {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #totalContainer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}

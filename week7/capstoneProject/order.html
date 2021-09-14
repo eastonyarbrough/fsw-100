@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/5389d65fc4.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"></link>
+        <title>Order il Mattone</title>
+    </head>
+    <body>
+        <div id=gridContainer>
+            <nav>
+                <div class="navItemBkg">
+                    <a href="landing.html" id="homeNav">
+                        <i class="fas fa-home fa-2x"></i>
+                    </a>
+                </div>
+                <h3 id="homeTxt"></h3>
+                <div class="navItemBkg">
+                    <a href="menu.html" id="menuNav">
+                        <i class="fas fa-utensils fa-2x"></i>
+                    </a>
+                </div>
+                <h3 id="menuTxt"></h3>
+                <div class="navItemBkg">
+                    <a href="order.html" id="orderNav">
+                        <i class="fas fa-cash-register fa-2x"></i>
+                    </a>
+                </div>
+                <h3 id="orderTxt"></h3>
+            </nav>
+            <header id=orderHdrFlex>
+                <div>
+                    <h1>What would you like?</h1>
+                </div>
+            </header>
+            <form id="myForm">
+                <main id="mainOrderGrid">
+                    <div class="orderFlex" id="spagOrder">
+                        <h1 class="itemLrgTxt">Spaghetti</h1>
+                        <h2 class="itemLrgTxt">Price: $12.98</h2>
+                        <div class="flexInput">
+                            <option id="spagPrice" value="12.98"></option>
+                            <lable class="itemSmlTxt">Quantity: </lable>
+                            <input type="number" min="0" id="spagQuan"></input>
+                        </div>
+                    </div>
+                    <div class="orderFlex" id="raviOrder">
+                        <h1 class="itemLrgTxt">Ravioli</h1>
+                        <h2 class="itemLrgTxt">Price: $12.50</h2>
+                        <div class="flexInput">
+                            <option id="raviPrice" value="12.50"></option>
+                            <lable class="itemSmlTxt">Quantity: </lable>
+                            <input type="number" min="0" id="raviQuan"></input>
+                        </div>
+                    </div>
+                    <div class="orderFlex" id="lasaOrder">
+                        <h1 class="itemLrgTxt">Lasagna</h1>
+                        <h2 class="itemLrgTxt">Price: $13.50</h2>
+                        <div class="flexInput">
+                            <option id="lasaPrice" value="13.50"></option>
+                            <lable class="itemSmlTxt">Quantity: </lable>
+                            <input type="number" min="0" id="lasaQuan"></input>
+                        </div>
+                    </div>
+                    <div class="orderFlex" id="pizzOrder">
+                        <h1 class="itemLrgTxt">Pizza</h1>
+                        <h2 class="itemLrgTxt">Price: $10.98</h2>
+                        <div class="flexInput">
+                            <option id="pizzPrice" value="10.98"></option>
+                            <lable class="itemSmlTxt">Quantity: </lable>
+                            <input type="number" min="0" id="pizzQuan"></input>
+                        </div>
+                    </div>
+                    <div class="orderFlex" id="boloOrder">
+                        <h1 class="itemLrgTxt">Bolognese</h1>
+                        <h2 class="itemLrgTxt">Price: $13.98</h2>
+                        <div class="flexInput">
+                            <option id="boloPrice" value="13.98"></option>
+                            <lable class="itemSmlTxt">Quantity: </lable>
+                            <input type="number" min="0" id="boloQuan"></input>
+                        </div>
+                    </div>
+                    <div class="orderFlex" id="caciOrder">
+                        <h1 class="itemLrgTxt">Cacio e Pepe</h1>
+                        <h2 class="itemLrgTxt">Price: $10.50</h2>
+                        <div class="flexInput">
+                            <option id="caciPrice" value="10.50"></option>
+                            <lable class="itemSmlTxt">Quantity: </lable>
+                            <input type="number" min="0" id="caciQuan"></input>
+                        </div>
+                    </div>
+                    <div id="totalContainer">
+                        <p class="totalAsset"><b>Total: </b></p>
+                        <p id="total" class="totalAsset"></p>
+                    </div>
+                </main>
+            </form>
+            <footer id="ftrFlex">
+                <p>Thank you for choosing il Mattone!</p>
+            </footer>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
